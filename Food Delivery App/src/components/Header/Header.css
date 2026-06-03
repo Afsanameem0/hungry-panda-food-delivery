@@ -1,0 +1,67 @@
+.header {
+    height: 32vw;
+    width: 100%;
+    margin: 30px auto;
+    background: url('/Header_img.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.header-contains{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s ease-in-out;
+    
+}
+.header-contains h2{
+    font-size: max(4.5vw, 22px);
+    color:hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+.header-contains p{
+    
+    color: white;
+    font-size: 1vw; 
+}
+.header-contains button{
+    padding: 10px 25px;
+    border: none;
+    background-color:hsl(355, 91%, 50%);
+    color: white;
+    font-size: 1vw;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 1050px) {
+    
+    .header-contains {
+        max-width: 45%;
+        
+    }
+}
+@media (max-width: 750px) {
+    .header-contains {
+        max-width: 65%;
+        
+    }
+    .header-contains p{
+        display: none;
+
+    }
+    .header-contains button{
+        padding: 2vw 4vw;
+    }
+}
